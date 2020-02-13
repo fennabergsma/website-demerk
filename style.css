@@ -1,16 +1,19 @@
+/* basis fonts */
+
 p {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color:#333;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color:#333;
+  line-height: 140%;
 }
 
 body {
 	color: #333;
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	font-weight: 400;
+	font-family: Roboto Condensed, sans-serif;
+	font-weight: 300;
 	font-size: medium;
 	vertical-align: baseline;
 	margin: 0px;
@@ -27,7 +30,7 @@ h1
 h2
 {
 	clear: both;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: large;
 	color: #d93030
 }
@@ -35,7 +38,7 @@ h2
 h3
 {
 	clear: both;
-  font-weight: 200;
+  font-weight: 300;
   font-size: medium;
 	color: #d93030;
 }
@@ -48,80 +51,74 @@ h4
 	color: #d93030
 }
 
-hr {
-		border-top-style:solid;
-		border-top-width:1px;
-		border-top-color:#000080;
-}
-
 
 /* header */
 
-#header {
+/* bovenste rode balk */
+
+#bovenste-rode-balk {
 		background-color: #d93030;
 		padding-left: 5%;
 		color: white;
-		/* font-size: 18px; */
 		padding-top: 1.5%;
 		padding-bottom: 1.0%;
 }
-#header p {
+
+#bovenste-rode-balk p {
   color:white;
 }
 
-#header a:link
+#bovenste-rode-balk a:link
 {
   text-decoration:none;
   color:white;
 } /* unvisited link */
 
-#header a:visited
+#bovenste-rode-balk a:visited
 {
   text-decoration:none;
   color:white;
 } /* visited link */
 
-#header a:hover
+#bovenste-rode-balk a:hover
 {
   text-decoration:underline;
   color:white;
 }   /* mouse over link */
 
-#header a:active
+#bovenste-rode-balk a:active
 {
   text-decoration:underline;
   color:white;
 }  /* selected link */
 
 
-/* navigation menu */
 
-#nav {
+/* menu */
+
+#menu {
 	padding:1%;
-  /* border: 1px solid black; */
 }
 
-#nav ul {
+#menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 
 #logo {
-    margin: 1%;
+    padding: 1%;
     max-width: 25%;
-    /* border: 1px solid green; */
     vertical-align: top;
-    margin-right: 3%;
+    padding-right: 3%;
+    background-color:white;
 }
 
-#nav ul li {
+#menu ul li {
   margin: 1%;
   display: inline-block;
   min-width: 11%;
-  /* border: 1px solid blue; */
   vertical-align: bottom;
 }
 
@@ -129,136 +126,156 @@ li a {
   display: block;
   padding: 5%;
   margin: 1%;
-  /* border: 1px solid #F5A855; */
   border-radius:3px;
-  /* background-color: #F2F2F2; */
   text-align:center;
   min-width: fit-content;
   font-size:large;
 }
 
-#nav a:link {
+#menu a:link, #menu a:visited, #menu a:active {
 	color:#333;
 	text-decoration:none;
 	} /* unvisited link in menu*/
 
-#nav a:visited {
-	color:#333;
-	text-decoration:none;
-	} /* visited link in menu*/
-
-#nav a:hover {
+#menu a:hover {
 	color:#333;
 	text-decoration:none;
   background-color: #F2F2F2;
 	}   /* mouse over link in menu*/
 
-#nav a:active {
-	text-decoration:none;
-	}  /* selected link in menu*/
+#menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 
 /* omslag */
 
-
-.pngcontainer1, .pngcontainer1 img {
-  position: relative;
-}
-
-.pngcontainer1 img {
-  z-index: 102;
-}
-
-.pngcontainer1 img:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 101;
-}
-
-.pngcontainer1 img:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-
-.pngcontainer1 p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-
-
 #omslag {
   position: relative;
-  /* border: 1px solid red; */
-  margin: -1%;
-  margin-right: 0%;
 }
 
-#afspraak {
+#omslagfoto {
+  z-index: 1;
+  max-width:100%;
+  height:100%;
+  bottom:0;
+}
+
+#omslagfoto img {
+  width:100%;
+  bottom:0;
+}
+
+#witvlak {
+  z-index: 2;
   position: absolute;
-  background-color:white;
-  bottom: 1%;
+  opacity:0.7;
+  bottom: 0%;
   right: 5%;
-  max-width: 40%;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  /* border: 1px solid blue; */
   padding: 2%;
   border-radius: 10px;
+  background-color: white;
+  width: 35%;
+  height:60%;
 }
 
-#opties {
+#bel, #mail, #online {
+  z-index: 3;
   position: absolute;
-  color:#333;
-  padding:5%;
-  display:contents;
-}
-
-#opties h3 {
-  background-color:white;
-  opacity: 1;
-  filter: alpha(opacity=100);
+  opacity:1;
+  width: 30%;
+  right: 9%;
+  padding: 0.6%;
   border-radius: 5px;
   text-align:center;
-  width:60%;
-  margin-left:5%;
-  padding:1%;
+  background-color: white;
 }
 
+#bel p, #mail p, #online p {
+  color:#d93030;
+  padding-right:25%;
+}
+
+#bel a:link, #bel a:visited, #mail a:link, #mail a:visited
+{
+  text-decoration:none;
+  color:#d93030;
+} /* unvisited link */
+
+#bel a:hover, #bel a:active, #mail a:hover, #mail a:active
+{
+  text-decoration:underline;
+  color:#d93030;
+}   /* mouse over link */
+
+
+#bel {
+  bottom: 30%;
+}
+
+#mail {
+  bottom: 20%;
+}
+
+#online {
+  bottom: 10%;
+}
+
+#jolanda {
+  z-index: 4;
+  position: absolute;
+  left: 82%;
+  bottom:0;
+}
+
+#jolanda img {
+  width:96%;
+}
+
+/* #omslag:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
 
 /* omdat */
 
 #omdat {
+  z-index: 5;
+  position:relative;
   background-color:#d93030;
   color: white;
-  padding-top: 1.5%;
+  padding-top: 1.0%;
   padding-bottom: 1.0%;
-  /* border: 1px solid green; */
+  width:100%;
+  margin-top:-0.5%;
 }
 
 #omdat p {
   text-align: center;
   color: white;
-  /* font-family: cursive; */
   font-size:x-large;
 }
+
+#omdat:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* einde header */
+
+
+
 
 
 /* blokken */
 
 #blokken {
   padding:3%;
-}
-
-#blokken:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 #blok{
@@ -277,9 +294,14 @@ li a {
 
 #blok ul li{
   color:white;
-  font-weight: 100;
+  line-height: 140%;
 }
 
+#blokken:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 /* grijzebox */
@@ -299,27 +321,30 @@ li a {
   background-color:white;
 }
 
-#specialisaties h3{
+#specialisaties h2{
   margin:0;
-  margin-left:4%
+  margin-left:4%;
+  margin-bottom:4%;
 }
 
 #specialisaties ul{
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
 }
 
 #specialisaties ul li{
   padding:2%;
   margin:2%;
-  list-style-type: square;
+  list-style-type: none;
   border-bottom-style:solid;
   border-bottom-width:1px;
   border-bottom-color:#bfbfbf;
 }
 
-
+#specialisaties img {
+  width:4%;
+  padding-right:4%;
+}
 
 /* praktijk */
 
@@ -330,10 +355,21 @@ li a {
 }
 
 #praktijk img {
-  width:60%;
-  float:right;
-  margin:3%;
+  width:95%;
+  margin-top:4%;
+  margin-bottom:4%;
 }
+
+#grijzebox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* einde grijze box */
+
+
+
 
 /* team */
 
@@ -356,31 +392,37 @@ li a {
   width:15%;
 }
 
-#team:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 #cirkel-medewerker {
   border-radius: 50%;
   width:100%;
   height:100%;
 }
 
-/* onderteam */
+#team:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-#onderteam{
+/* footer */
+
+#footer{
   padding:3%;
 }
 
-#onderteam h2{
+#footer h2{
   color:#333;
   text-align:center;
 }
 
+#footer img {
+  width:5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:5%;
+}
 
-
-#onderteam p{
+#footer p{
   text-align:center;
 }
