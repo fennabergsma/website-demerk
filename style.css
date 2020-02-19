@@ -309,6 +309,7 @@ li a {
 #grijzebox{
   background-color: #F2F2F2;
   float:left;
+  width:100%;
 }
 
 /* specialisaties */
@@ -348,27 +349,40 @@ li a {
 
 /* praktijk */
 
-#praktijk {
+#rechtsingrijs {
   float:left;
   margin:5%;
   width:40%;
 }
 
-#praktijk img {
+#rechtsingrijs img {
   width:95%;
   margin-top:4%;
   margin-bottom:4%;
 }
 
-#grijzebox:after {
+#rechtsingrijs:after {
   content: "";
   display: table;
   clear: both;
 }
 
+#oncologie {
+  position:relative;
+  width:100%;
+  height:0;
+  padding-bottom:10%;
+}
+
+#iframe_oncologie{
+  /* position:absolute; */
+  top:0;
+  left:0;
+  width:100%;
+  overflow:hidden;
+}
+
 /* einde grijze box */
-
-
 
 
 /* team */
@@ -425,4 +439,14 @@ li a {
 
 #footer p{
   text-align:center;
+}
+
+
+/* specialisaties */
+
+
+#iframe_oncologie {
+  width:100%;
+  border:none;
+  scrolling:no;
 }
