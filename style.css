@@ -312,9 +312,9 @@ li a {
   width:100%;
 }
 
-/* specialisaties */
+/* specialisaties-lijst */
 
-#specialisaties{
+#specialisaties-lijst{
   float:left;
   margin:5%;
   width:25%;
@@ -322,18 +322,18 @@ li a {
   background-color:white;
 }
 
-#specialisaties h2{
+#specialisaties-lijst h2{
   margin:0;
   margin-left:4%;
   margin-bottom:4%;
 }
 
-#specialisaties ul{
+#specialisaties-lijst ul{
     margin: 0;
     padding: 0;
 }
 
-#specialisaties ul li{
+#specialisaties-lijst ul li{
   padding:2%;
   margin:2%;
   list-style-type: none;
@@ -342,7 +342,7 @@ li a {
   border-bottom-color:#bfbfbf;
 }
 
-#specialisaties img {
+#specialisaties-lijst img {
   width:4%;
   padding-right:4%;
 }
@@ -420,6 +420,10 @@ li a {
 
 /* footer */
 
+#iframe-header{
+  border:none;
+}
+
 #footer{
   padding:3%;
 }
@@ -442,11 +446,32 @@ li a {
 }
 
 
-/* specialisaties */
+/* specialisaties-lijst */
+
+#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_oncologie {
+  border: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
 
 
-#iframe_oncologie {
-  width:100%;
-  border:none;
-  scrolling:no;
+
+#container_header, #container_footer, #container_specialisaties-lijst {
+  overflow: hidden;
+  position:relative;
+}
+
+#container_header {
+  padding-top: 50%;
+}
+
+#container_footer {
+  padding-top: 20%;
+}
+
+#container_specialisaties-lijst {
+  padding-top: 50%;
 }
