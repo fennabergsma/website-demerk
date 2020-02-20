@@ -160,7 +160,6 @@ li a {
 #omslagfoto {
   z-index: 1;
   max-width:100%;
-  height:100%;
   bottom:0;
 }
 
@@ -235,12 +234,6 @@ li a {
   width:96%;
 }
 
-/* #omslag:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
 /* omdat */
 
 #omdat {
@@ -267,8 +260,6 @@ li a {
 }
 
 /* einde header */
-
-
 
 
 
@@ -304,9 +295,9 @@ li a {
 }
 
 
-/* grijzebox */
+/* body-box */
 
-#grijzebox{
+#body-box{
   background-color: #F2F2F2;
   float:left;
   width:100%;
@@ -314,7 +305,7 @@ li a {
 
 /* specialisaties-lijst */
 
-#specialisaties-lijst{
+#links-in-body {
   float:left;
   margin:5%;
   width:25%;
@@ -349,37 +340,22 @@ li a {
 
 /* praktijk */
 
-#rechtsingrijs {
+#rechts-in-body {
   float:left;
   margin:5%;
   width:40%;
 }
 
-#rechtsingrijs img {
+#rechts-in-body img {
   width:95%;
   margin-top:4%;
   margin-bottom:4%;
 }
 
-#rechtsingrijs:after {
+#rechts-in-body:after {
   content: "";
   display: table;
   clear: both;
-}
-
-#oncologie {
-  position:relative;
-  width:100%;
-  height:0;
-  padding-bottom:10%;
-}
-
-#iframe_oncologie{
-  /* position:absolute; */
-  top:0;
-  left:0;
-  width:100%;
-  overflow:hidden;
 }
 
 /* einde grijze box */
@@ -446,9 +422,9 @@ li a {
 }
 
 
-/* specialisaties-lijst */
+/* iframes */
 
-#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_oncologie {
+#iframe_header, #iframe_footer, #iframe_specialisaties-lijst {
   border: 0;
   height: 100%;
   left: 0;
@@ -458,14 +434,13 @@ li a {
 }
 
 
-
 #container_header, #container_footer, #container_specialisaties-lijst {
   overflow: hidden;
   position:relative;
 }
 
 #container_header {
-  padding-top: 50%;
+  padding-top: 60%;
 }
 
 #container_footer {
@@ -473,5 +448,5 @@ li a {
 }
 
 #container_specialisaties-lijst {
-  padding-top: 50%;
+  padding-top: 230%;
 }
