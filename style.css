@@ -132,22 +132,44 @@ li a {
   font-size:large;
 }
 
-#menu a:link, #menu a:visited, #menu a:active {
+#menu a:link, #menu a:visited, #menu a:active, #dropdown #knop a {
 	color:#333;
 	text-decoration:none;
 	} /* unvisited link in menu*/
 
-#menu a:hover {
+#menu a:hover, #dropdown-inhoud a:hover, #dropdown:hover #knop a {
 	color:#333;
 	text-decoration:none;
   background-color: #F2F2F2;
+  border-radius:3px;
 	}   /* mouse over link in menu*/
+
+#dropdown-inhoud {
+  display: none;
+  position: absolute;
+  min-width: 10.8%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius:3px;
+  z-index: 6;
+}
+
+#dropdown-inhoud a {
+  text-align:left;
+  margin:1%;
+}
+
+#dropdown:hover #dropdown-inhoud {
+  display: block;
+}
 
 #menu:after {
   content: "";
   display: table;
   clear: both;
 }
+
+
 
 
 
@@ -358,6 +380,12 @@ li a {
   clear: both;
 }
 
+#body-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* einde grijze box */
 
 
@@ -388,17 +416,7 @@ li a {
   height:100%;
 }
 
-#team:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* footer */
-
-#iframe-header{
-  border:none;
-}
 
 #footer{
   padding:3%;
@@ -421,6 +439,12 @@ li a {
   text-align:center;
 }
 
+#team:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 /* iframes */
 
@@ -440,11 +464,12 @@ li a {
 }
 
 #container_header {
-  padding-top: 60%;
+  padding-top: 56%;
 }
 
 #container_footer {
-  padding-top: 20%;
+  padding-top: 25%;
+  width:100%
 }
 
 #container_specialisaties-lijst {
