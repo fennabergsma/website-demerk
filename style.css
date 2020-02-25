@@ -401,13 +401,21 @@ li a {
   padding:3%;
 }
 
-#medewerkers{
+#medewerkers, #specialist{
   float:left;
   margin:2%;
   background-color:white;
   inline-size:fit-content;
   border-radius: 50%;
+}
+
+#medewerkers{
   width:15%;
+}
+
+#specialist{
+  width:30%;
+  padding:1%;
 }
 
 #cirkel-medewerker {
@@ -415,6 +423,15 @@ li a {
   width:100%;
   height:100%;
 }
+
+#specialisatie-inhoud img {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+
+
 
 /* footer */
 
