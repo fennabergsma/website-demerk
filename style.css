@@ -157,6 +157,7 @@ li a {
 #dropdown-inhoud a {
   text-align:left;
   margin:1%;
+  font-size:medium;
 }
 
 #dropdown:hover #dropdown-inhoud {
@@ -386,6 +387,26 @@ li a {
   clear: both;
 }
 
+
+#rechts-in-body a:link, #rechts-in-body a:visited
+{
+  text-decoration:none;
+  color:#333;
+  font-size:small;
+} /* unvisited link */
+
+#rechts-in-body a:hover, #rechts-in-body a:active
+{
+  text-decoration:underline;
+  color:#333;
+  font-size:small;
+}   /* mouse over link */
+
+#pad-op-website {
+  margin-bottom:4%;
+}
+
+
 /* einde grijze box */
 
 
@@ -404,13 +425,13 @@ li a {
 #medewerkers, #specialist{
   float:left;
   margin:2%;
-  background-color:white;
   inline-size:fit-content;
   border-radius: 50%;
 }
 
 #medewerkers{
   width:15%;
+  background-color:white;
 }
 
 #specialist{
@@ -421,7 +442,6 @@ li a {
 #cirkel-medewerker {
   border-radius: 50%;
   width:100%;
-  height:100%;
 }
 
 #specialisatie-inhoud img {
