@@ -468,6 +468,10 @@ li a {
   padding-right:4%;
 }
 
+#patient-ervaring p {
+  font-size:smaller;
+}
+
 /* footer */
 
 #footer{
