@@ -17,6 +17,7 @@ body {
 	font-size: medium;
 	vertical-align: baseline;
 	margin: 0px;
+  line-height: 140%;
 }
 
 h1
@@ -438,6 +439,10 @@ li a {
 #specialist{
   width:30%;
   padding:1%;
+}
+
+#specialist p{
+  text-align:center;
 }
 
 #cirkel-medewerker {
