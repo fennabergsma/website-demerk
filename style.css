@@ -408,6 +408,9 @@ li a {
   margin-bottom:4%;
 }
 
+#pad-op-website p {
+  font-size:small;
+}
 
 /* einde grijze box */
 
@@ -424,7 +427,7 @@ li a {
   padding:3%;
 }
 
-#medewerkers, #specialist{
+#medewerkers, #specialist {
   float:left;
   margin:2%;
   inline-size:fit-content;
@@ -433,7 +436,6 @@ li a {
 
 #medewerkers{
   width:15%;
-  background-color:white;
 }
 
 #specialist{
@@ -445,10 +447,73 @@ li a {
   text-align:center;
 }
 
-#cirkel-medewerker {
+#cirkel-medewerker, #cirkel-specialist {
   border-radius: 50%;
   width:100%;
 }
+
+#cirkel-medewerker {
+  padding:3%;
+  background-color:white;
+}
+
+
+#teamoverzicht {
+   position: relative;
+   display: block;
+   height: auto;
+   float:left;
+   margin: 2%;
+   inline-size:fit-content;
+   border-radius: 50%;
+   width: 28%;
+}
+
+#cirkel-teamoverzicht {
+  border-radius: 50%;
+  width:100%;
+  display:block;
+  height:auto;
+}
+
+#teamoverzicht #tekst-brigitte1 {
+ color: #333;
+ font-size: x-large;
+ font-weight: 20;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+}
+
+#teamoverzicht #hover-brigitte1 {
+ position: absolute;
+ top: 4%;
+ bottom: 5%;
+ height: 92%;
+ width: 95%;
+ opacity: 0;
+ transition: .5s ease;
+}
+
+#teamoverzicht:hover #hover-brigitte1 {
+ opacity: 0.7;
+}
+
+#teamoverzicht #onbekend1 {
+ transition: .5s ease;
+}
+#teamoverzicht:hover #onbekend1 {
+ opacity: 0;
+}
+#teamoverzicht #hover-brigitte1 {
+  background-color: white;
+  border-radius: 50%;
+}
+
+
 
 #specialisatie-inhoud img {
   /* margin:0;
