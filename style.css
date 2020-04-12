@@ -536,6 +536,7 @@ li a {
   float:left;
   padding-left:4%;
   padding-right:4%;
+  image-orientation:from-image;
 }
 
 #patient-ervaring p {
