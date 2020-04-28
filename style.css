@@ -448,6 +448,11 @@ li a {
   padding:1%;
 }
 
+#medewerkers:hover, #specialist:hover {
+  opacity: 0.5;
+  transition: .5s ease;
+}
+
 #specialist p{
   text-align:center;
 }
@@ -493,7 +498,7 @@ li a {
  width: 100%;
 }
 
-#teamoverzicht #hover-teamoverzicht{
+#teamoverzicht #hover-teamoverzicht {
  position: absolute;
  top: 4%;
  bottom: 5%;
