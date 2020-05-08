@@ -112,8 +112,8 @@ h4
 }
 
 #logo {
-    padding: 1%;
-    max-width: 25%;
+    padding: 2%;
+    max-width: 20%;
     vertical-align: top;
     padding-right: 3%;
     background-color:white;
@@ -331,6 +331,12 @@ li a {
   width:100%;
 }
 
+#body-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* specialisaties-lijst */
 
 #links-in-body {
@@ -440,7 +446,8 @@ li a {
 }
 
 #medewerkers{
-  width:15%;
+  width:18%;
+  padding:1%;
 }
 
 #specialist{
@@ -553,6 +560,9 @@ li a {
 
 #patient-ervaring p {
   font-size:smaller;
+  font-style:italic;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #korte-ervaring img {
@@ -596,7 +606,7 @@ li a {
 
 /* iframes */
 
-#iframe_header, #iframe_footer, #iframe_specialisaties-lijst {
+#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood {
   border: 0;
   height: 100%;
   left: 0;
@@ -606,7 +616,7 @@ li a {
 }
 
 
-#container_header, #container_footer, #container_specialisaties-lijst {
+#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood {
   overflow: hidden;
   position:relative;
 }
@@ -622,6 +632,11 @@ li a {
 
 #container_specialisaties-lijst {
   padding-top: 300%;
+}
+
+#container_team-rood {
+  padding-top: 100%;
+  width:100%;
 }
 
 #specialisaties-lijst a:link, #specialisaties-lijst a:visited {
