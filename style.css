@@ -226,13 +226,13 @@ li a {
   padding-right:25%;
 }
 
-#bel a:link, #bel a:visited, #mail a:link, #mail a:visited
+#bel a:link, #bel a:visited, #mail a:link, #mail a:visited, #online a:link, #online a:visited
 {
   text-decoration:none;
   color:#d93030;
 } /* unvisited link */
 
-#bel a:hover, #bel a:active, #mail a:hover, #mail a:active
+#bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active
 {
   text-decoration:underline;
   color:#d93030;
