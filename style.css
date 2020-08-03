@@ -221,6 +221,14 @@ li a {
   background-color: white;
 }
 
+#red {
+  background-color: #d93030;
+}
+
+#red p {
+  color: white;
+}
+
 #bel p, #mail p, #online p {
   color:#d93030;
   padding-right:25%;
@@ -267,7 +275,7 @@ li a {
 #omdat {
   z-index: 5;
   position:relative;
-  background-color:#d93030;
+  background-color:#808080;
   color: white;
   padding-top: 1.0%;
   padding-bottom: 1.0%;
@@ -331,13 +339,34 @@ li a {
   width:100%;
 }
 
-#body-box:after {
+#body-praktijk{
+  background-color: white;
+  float:left;
+  width:100%;
+}
+
+#body-box:after, #body-praktijk:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* specialisaties-lijst */
+
+#links-praktijk {
+  float:left;
+  margin:5%;
+  width:25%;
+  padding:5%;
+  background-color:#F2F2F2;
+}
+
+#afspraak-frame {
+  background-color: white;
+  padding: 10%;
+  margin:5%;
+  width:80%;
+}
 
 #links-in-body {
   float:left;
@@ -387,12 +416,6 @@ li a {
 }
 
 #rechts-in-body:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#body-box:after {
   content: "";
   display: table;
   clear: both;
@@ -606,7 +629,7 @@ li a {
 
 /* iframes */
 
-#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood {
+#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood, #iframe_afspraak-frame {
   border: 0;
   height: 100%;
   left: 0;
@@ -615,8 +638,7 @@ li a {
   width: 100%;
 }
 
-
-#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood {
+#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood, #container_afspraak-frame  {
   overflow: hidden;
   position:relative;
 }
@@ -635,6 +657,11 @@ li a {
 }
 
 #container_team-rood {
+  padding-top: 100%;
+  width:100%;
+}
+
+#container_afspraak-frame {
   padding-top: 100%;
   width:100%;
 }
