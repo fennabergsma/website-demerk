@@ -339,13 +339,13 @@ li a {
   width:100%;
 }
 
-#body-praktijk{
+#body-white{
   background-color: white;
   float:left;
   width:100%;
 }
 
-#body-box:after, #body-praktijk:after {
+#body-box:after, #body-white:after {
   content: "";
   display: table;
   clear: both;
