@@ -369,11 +369,12 @@ li a {
 }
 
 #links-in-body {
-  float:left;
-  margin:5%;
-  width:25%;
-  padding:5%;
-  background-color:white;
+  float: left;
+  margin-left: 2%;
+  width: 22%;
+  padding: 5%;
+  background-color: white;
+  margin-top: 5%;
 }
 
 #specialisaties-lijst h2{
@@ -406,7 +407,7 @@ li a {
 #rechts-in-body {
   float:left;
   margin:5%;
-  width:40%;
+  width:56%;
 }
 
 #rechts-in-body img {
