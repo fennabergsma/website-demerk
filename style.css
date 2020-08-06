@@ -286,7 +286,8 @@ li a {
 #omdat p {
   text-align: center;
   color: white;
-  font-size:x-large;
+  font-size: larger;
+  font-weight: bolder;
 }
 
 #omdat:after {
@@ -375,6 +376,7 @@ li a {
   padding: 5%;
   background-color: white;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #specialisaties-lijst h2{
@@ -498,6 +500,9 @@ li a {
   background-color:white;
 }
 
+#teamoverzicht-box {
+  margin: 5%;
+}
 
 #teamoverzicht {
    position: relative;
@@ -507,7 +512,7 @@ li a {
    margin: 2%;
    inline-size:fit-content;
    border-radius: 50%;
-   width: 28%;
+   width: 20%;
 }
 
 #cirkel-teamoverzicht {
@@ -519,8 +524,8 @@ li a {
 
 #teamoverzicht #tekst-teamoverzicht {
  color: #333;
- font-size: large;
- font-weight: 20;
+ font-size: larger;
+ font-weight: bolder;
  text-align: center;
  position: absolute;
  top: 50%;
@@ -531,10 +536,11 @@ li a {
 
 #teamoverzicht #hover-teamoverzicht {
  position: absolute;
- top: 4%;
- bottom: 5%;
- height: 92%;
- width: 95%;
+ position: absolute;
+ top: 0.1%;
+ bottom: 0.01%;
+ height: 100%;
+ width: 100%;
  opacity: 0;
  transition: .5s ease;
 }
@@ -565,7 +571,9 @@ li a {
   height:100%;
 }
 
-#patient-ervaring {
+
+
+#patient {
   padding: 5%;
   background-color:white;
   margin-top: 4%;
@@ -574,28 +582,27 @@ li a {
   margin-right: -4%;
 }
 
-#patient-ervaring img {
+
+#patient-image {
   width:30%;
-  float:left;
-  padding-left:4%;
-  padding-right:4%;
-  image-orientation:from-image;
+  display: inline-block;
+  vertical-align:middle;
 }
 
-#patient-ervaring p {
+#patient-text {
   font-size:smaller;
   font-style:italic;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-#korte-ervaring img {
-  float:none;
-}
-
-#korte-ervaring p {
+  margin-left:5%;
   width:60%;
-  float:right;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+#patient-alleen-text {
+  font-size:smaller;
+  font-style:italic;
+  display:inline-block;
+  vertical-align:middle;
 }
 
 /* footer */
