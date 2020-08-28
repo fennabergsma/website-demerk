@@ -464,7 +464,12 @@ li a {
   padding:3%;
 }
 
-#medewerkers, #specialist {
+#team-links{
+  padding:5%;
+  margin:-10%;
+}
+
+#medewerkers, #specialist, #medewerkers-links {
   float:left;
   margin:2%;
   inline-size:fit-content;
@@ -481,7 +486,12 @@ li a {
   padding:1%;
 }
 
-#medewerkers:hover, #specialist:hover {
+#medewerkers-links{
+  width:35%;
+  padding:5%;
+}
+
+#medewerkers:hover, #specialist:hover, #medewerkers-links:hover {
   opacity: 0.5;
   transition: .5s ease;
 }
