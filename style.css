@@ -372,12 +372,17 @@ li a {
 #links-in-body {
   float: left;
   margin-left: 2%;
-  width: 22%;
-  padding: 5%;
+  width: 25%;
+  padding: 2.5%;
   background-color: white;
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+#specialisaties-lijst {
+  margin:5%;
+}
+
 
 #specialisaties-lijst h2{
   margin:0;
@@ -409,7 +414,7 @@ li a {
 #rechts-in-body {
   float:left;
   margin:5%;
-  width:56%;
+  width:58%;
 }
 
 #rechts-in-body img {
@@ -424,13 +429,13 @@ li a {
   clear: both;
 }
 
-#rechts-in-body p a:link, #rechts-in-body p a:visited
+#body-box p a:link, #body-box p a:visited
 {
   text-decoration:none;
   color:#333;
 } /* unvisited link */
 
-#rechts-in-body p a:hover, #rechts-in-body p a:active
+#body-box p a:hover, #body-box p a:active
 {
   text-decoration:underline;
   color:#333;
@@ -465,13 +470,10 @@ li a {
 }
 
 #team-links{
-  padding:5%;
-  margin:-10%;
 }
 
 #medewerkers, #specialist, #medewerkers-links {
   float:left;
-  margin:2%;
   inline-size:fit-content;
   border-radius: 50%;
 }
@@ -479,25 +481,28 @@ li a {
 #medewerkers{
   width:18%;
   padding:1%;
+  margin:2%;
 }
 
 #specialist{
   width:27%;
   padding:1%;
+  margin:2%;
 }
 
 #medewerkers-links{
-  width:35%;
+  width:40%;
   padding:5%;
 }
 
-#medewerkers:hover, #specialist:hover, #medewerkers-links:hover {
+#medewerkers:hover, #specialist:hover, #medewerkers-links:hover, #specialisatie:hover, #specialisatieoverzicht:hover, #homeoverzicht:hover {
   opacity: 0.5;
   transition: .5s ease;
 }
 
 #specialist p{
   text-align:center;
+  margin: -5%;
 }
 
 #cirkel-medewerker, #cirkel-specialist {
@@ -510,8 +515,57 @@ li a {
   background-color:white;
 }
 
+#specialisatie, #specialisatieoverzicht, #homeoverzicht {
+  position: relative;
+  display: block;
+  height: auto;
+  float:left;
+  padding:1%;
+  margin:2%;
+}
+
+#homeoverzicht {
+  width:44%
+}
+
+#specialisatie {
+  width:40%;
+}
+
+#specialisatieoverzicht {
+  width:26%;
+}
+
+#specialisatie p{
+  text-align:center;
+  margin: -5%;
+}
+
+#specialisatie #tekst-specialisatie, #specialisatieoverzicht #tekst-specialisatie, #homeoverzicht #tekst-home {
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 13%;
+  right: 10%;
+  width: 85%;
+  text-align: end;
+}
+
+#specialisatieoverzicht-box {
+  margin: 5%;
+  float:inherit;
+}
+
+#vierhoek-specialisatieoverzicht, #vierhoek-home {
+  width:100%;
+  display:block;
+  height:auto;
+}
+
 #teamoverzicht-box {
   margin: 5%;
+  float:inherit;
 }
 
 #teamoverzicht {
@@ -545,7 +599,6 @@ li a {
 }
 
 #teamoverzicht #hover-teamoverzicht {
- position: absolute;
  position: absolute;
  top: 0.1%;
  bottom: 0.01%;
@@ -581,7 +634,9 @@ li a {
   height:100%;
 }
 
-
+#team-inhoud p {
+  margin-top:1%;
+}
 
 #patient {
   padding: 5%;
@@ -647,7 +702,7 @@ li a {
 
 /* iframes */
 
-#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood, #iframe_afspraak-frame {
+#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood, #iframe_afspraak-frame, #iframe_team-lijst {
   border: 0;
   height: 100%;
   left: 0;
@@ -656,13 +711,13 @@ li a {
   width: 100%;
 }
 
-#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood, #container_afspraak-frame  {
+#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood, #container_afspraak-frame, #container_team-lijst {
   overflow: hidden;
   position:relative;
 }
 
 #container_header {
-  padding-top: 59%;
+  padding-top: 55%;
 }
 
 #container_footer {
@@ -672,6 +727,10 @@ li a {
 
 #container_specialisaties-lijst {
   padding-top: 300%;
+}
+
+#container_team-lijst {
+  padding-top: 350%;
 }
 
 #container_team-rood {
@@ -698,4 +757,35 @@ li a {
 #specialisaties-lijst a:hover, a:active {
   text-decoration:underline;
   color:#333;
+}
+
+#home-links {
+  float: left;
+  margin:5%;
+  margin-right:0%;
+  width:65%;
+}
+
+#home-rechts {
+  float:left;
+  margin: 5%;
+  margin-left:0%;
+  width: 25%;
+  margin-top:10.5%;
+}
+
+#home-rechts img {
+  margin:7%;
+  width:100%;
+}
+
+#home-left h1 {
+  margin-left:3%;
+}
+
+#contact {
+  background-color: white;
+  margin: 7%;
+  padding: 8%;
+  width: 85%;
 }
