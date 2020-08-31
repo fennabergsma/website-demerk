@@ -423,6 +423,10 @@ li a {
   margin-bottom:4%;
 }
 
+#rechts-in-body h3 {
+  margin:0;
+}
+
 #rechts-in-body:after {
   content: "";
   display: table;
