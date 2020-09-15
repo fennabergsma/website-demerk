@@ -423,6 +423,13 @@ li a {
   margin-bottom:4%;
 }
 
+#rechts-in-body li a {
+  display:initial;
+  margin:0;
+  padding:0;
+  font-size:medium;
+}
+
 #rechts-in-body h3 {
   margin:0;
 }
@@ -634,8 +641,9 @@ li a {
 #specialisatie-inhoud img {
   /* margin:0;
   padding:0; */
-  width:100%;
+  width:70%;
   height:100%;
+  margin-left:15%;
 }
 
 #team-inhoud p {
