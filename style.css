@@ -234,13 +234,13 @@ li a {
   padding-right:25%;
 }
 
-#bel a:link, #bel a:visited, #mail a:link, #mail a:visited, #online a:link, #online a:visited
+#bel a:link, #bel a:visited, #mail a:link, #mail a:visited, #online a:link, #online a:visited, #afspraak a:link, #afspraak a:visited
 {
   text-decoration:none;
   color:#d93030;
 } /* unvisited link */
 
-#bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active
+#bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active, #afspraak a:active, #afspraak a:hover
 {
   text-decoration:underline;
   color:#d93030;
@@ -364,9 +364,7 @@ li a {
 
 #afspraak-frame {
   background-color: white;
-  padding: 10%;
-  margin:5%;
-  width:80%;
+  width:100%;
 }
 
 #links-in-body {
@@ -417,7 +415,7 @@ li a {
   width:58%;
 }
 
-#rechts-in-body img {
+#rechts-in-body img{
   width:95%;
   margin-top:4%;
   margin-bottom:4%;
@@ -438,6 +436,12 @@ li a {
   content: "";
   display: table;
   clear: both;
+}
+
+#nieuwsitem {
+  float:left;
+  margin:5%;
+  width:100%;
 }
 
 #body-box p a:link, #body-box p a:visited
@@ -483,7 +487,7 @@ li a {
 #team-links{
 }
 
-#medewerkers, #specialist, #medewerkers-links {
+#medewerkers, #specialist, #medewerkers-links, #therapeut {
   float:left;
   inline-size:fit-content;
   border-radius: 50%;
@@ -504,6 +508,14 @@ li a {
 #medewerkers-links{
   width:40%;
   padding:5%;
+}
+
+#therapeut {
+  width:25%;
+  padding:1%;
+  margin:2%;
+  float:right;
+  margin-top:-8%;
 }
 
 #medewerkers:hover, #specialist:hover, #medewerkers-links:hover, #specialisatie:hover, #specialisatieoverzicht:hover, #homeoverzicht:hover {
@@ -638,12 +650,26 @@ li a {
 
 
 
-#specialisatie-inhoud img {
+#specialisatie-inhoud img, #praktijk img {
   /* margin:0;
   padding:0; */
   width:70%;
   height:100%;
   margin-left:15%;
+}
+
+#nieuws-beeld {
+  width:70%;
+  height:100%;
+  margin-left:15%;
+}
+
+#specialist img {
+  /* margin:0;
+  padding:0; */
+  width:100%;
+  height:100%;
+  margin-left:0;
 }
 
 #team-inhoud p {
@@ -714,7 +740,7 @@ li a {
 
 /* iframes */
 
-#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood, #iframe_afspraak-frame, #iframe_team-lijst {
+#iframe_header, #iframe_footer, #iframe_specialisaties-lijst, #iframe_team-rood, #iframe_afspraak-frame, #iframe_team-lijst, #iframe_nieuws, #iframe_nieuws-preview {
   border: 0;
   height: 100%;
   left: 0;
@@ -723,7 +749,7 @@ li a {
   width: 100%;
 }
 
-#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood, #container_afspraak-frame, #container_team-lijst {
+#container_header, #container_footer, #container_specialisaties-lijst, #container_team-rood, #container_afspraak-frame, #container_team-lijst, #container_nieuws, #iframe_nieuws-preview {
   overflow: hidden;
   position:relative;
 }
@@ -742,7 +768,7 @@ li a {
 }
 
 #container_team-lijst {
-  padding-top: 350%;
+  padding-top: 320%;
 }
 
 #container_team-rood {
@@ -752,7 +778,14 @@ li a {
 
 #container_afspraak-frame {
   padding-top: 100%;
-  width:100%;
+}
+
+#container_nieuws {
+  padding-top: 90%;
+}
+
+#container_nieuws-preview {
+  padding-top: 0;
 }
 
 #specialisaties-lijst a:link, #specialisaties-lijst a:visited {
@@ -783,7 +816,7 @@ li a {
   margin: 5%;
   margin-left:0%;
   width: 25%;
-  margin-top:13.5%;
+  /* margin-top:13.5%; */
 }
 
 #home-rechts img {
