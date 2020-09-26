@@ -146,6 +146,7 @@ li a {
 	text-decoration:none;
   background-color: #F2F2F2;
   border-radius:3px;
+  transition: .5s ease;
 	}   /* mouse over link in menu*/
 
 #dropdown-inhoud {
@@ -167,6 +168,7 @@ li a {
 
 #dropdown:hover #dropdown-inhoud {
   display: block;
+  transition: .5s ease;
 }
 
 #menu:after {
@@ -229,6 +231,7 @@ li a {
   color: white;
 }
 
+/*
 #bel p, #mail p, #online p {
   color:#d93030;
   padding-right:25%;
@@ -240,24 +243,24 @@ li a {
   color:#d93030;
 } /* unvisited link */
 
-#bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active
+/* #bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active
 {
   text-decoration:underline;
   color:#d93030;
 }   /* mouse over link */
 
 
-#bel {
+/* #bel {
   bottom: 30%;
-}
+} */
 
-#mail {
+/* #mail {
   bottom: 20%;
-}
+} */
 
-#online {
+/* #online {
   bottom: 10%;
-}
+} */
 
 #jolanda {
   z-index: 4;
@@ -894,6 +897,5 @@ li a {
 .knop-wit-bel:hover, .knop-wit-mail:hover, .knop-wit-online:hover {
   text-decoration:none;
   transition: .5s ease;
-  background-color: #d93030;
-  color: white;
+  background-color: #F2F2F2;
 }
