@@ -234,13 +234,13 @@ li a {
   padding-right:25%;
 }
 
-#bel a:link, #bel a:visited, #mail a:link, #mail a:visited, #online a:link, #online a:visited, #afspraak a:link, #afspraak a:visited
+#bel a:link, #bel a:visited, #mail a:link, #mail a:visited, #online a:link, #online a:visited
 {
   text-decoration:none;
   color:#d93030;
 } /* unvisited link */
 
-#bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active, #afspraak a:active, #afspraak a:hover
+#bel a:hover, #bel a:active, #mail a:hover, #mail a:active, #online a:hover, #online a:active
 {
   text-decoration:underline;
   color:#d93030;
@@ -777,7 +777,7 @@ li a {
 }
 
 #container_afspraak-frame {
-  padding-top: 100%;
+  padding-top: 80%;
 }
 
 #container_nieuws {
@@ -833,4 +833,67 @@ li a {
   margin: 7%;
   padding: 8%;
   width: 85%;
+}
+
+#afspraak {
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.knop-rood {
+ background-color: #d93030; /* Green */
+ border: none;
+ color: white;
+ padding: 1.5%;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ border-radius: 5px;
+ margin:1.5%;
+ width:90%;
+}
+
+.knop-rood:hover {
+  color: white;
+  text-decoration:none;
+  opacity: 0.5;
+  transition: .5s ease;
+}
+
+.knop-wit-bel, .knop-wit-mail, .knop-wit-online {
+ background-color: white;
+ border: none;
+ color: #d93030;
+ padding: 0.5%;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ border-radius: 5px;
+ margin:1.5%;
+ width:23%;
+ z-index: 3;
+ position: absolute;
+ opacity:1;
+ bottom:0%;
+ right:6%;
+ padding-right:10%;
+}
+
+.knop-wit-online {
+ bottom:5%;
+}
+
+.knop-wit-mail {
+ bottom:15%;
+}
+
+.knop-wit-bel {
+ bottom:25%;
+}
+
+.knop-wit-bel:hover, .knop-wit-mail:hover, .knop-wit-online:hover {
+  text-decoration:none;
+  transition: .5s ease;
+  background-color: #d93030;
+  color: white;
 }
