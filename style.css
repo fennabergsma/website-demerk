@@ -442,9 +442,6 @@ li a {
 }
 
 #nieuwsitem {
-  float:left;
-  margin:5%;
-  width:100%;
 }
 
 #body-box p a:link, #body-box p a:visited
@@ -661,6 +658,12 @@ li a {
   margin-left:15%;
 }
 
+#nieuwsitem img {
+  width:50%;
+  height:100%;
+  margin-left:15%;
+}
+
 #nieuws-beeld {
   width:70%;
   height:100%;
@@ -843,7 +846,7 @@ li a {
   margin-right:5%;
 }
 
-.knop-rood {
+.knop-rood, .knop-nieuws {
  background-color: #d93030; /* Green */
  border: none;
  color: white;
@@ -853,10 +856,17 @@ li a {
  display: inline-block;
  border-radius: 5px;
  margin:1.5%;
- width:90%;
 }
 
-.knop-rood:hover {
+.knop-rood {
+  width:90%;
+}
+
+.knop-nieuws {
+  width:40%;
+}
+
+.knop-rood:hover, .knop-nieuws:hover {
   color: white;
   text-decoration:none;
   opacity: 0.5;
@@ -898,4 +908,21 @@ li a {
   text-decoration:none;
   transition: .5s ease;
   background-color: #F2F2F2;
+}
+
+#nieuws-image {
+  width:30%;
+  display: inline-block;
+  vertical-align:middle;
+}
+
+#nieuws-text {
+  vertical-align:middle;
+  margin-left:5%;
+  width:60%;
+  display:inline-block;
+}
+
+#nieuws {
+  padding: 2%;
 }
