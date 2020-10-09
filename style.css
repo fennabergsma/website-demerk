@@ -926,3 +926,17 @@ li a {
 #nieuws {
   padding: 2%;
 }
+
+#melding {
+  padding: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px;
+  font-size: larger;
+  text-align: center;
+  color: white;
+  background-color: #d93030;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
