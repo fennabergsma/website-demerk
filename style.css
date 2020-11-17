@@ -940,3 +940,15 @@ li a {
   border-radius: 10px;
   margin-bottom: 2%;
 }
+
+#melding-afspraak {
+  padding: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px;
+  text-align: center;
+  color: white;
+  background-color: #d93030;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
